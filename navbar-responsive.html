@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar-responsive</title>
+
+    <style>
+        .menu{
+            
+            background-color:aquamarine;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .menu a{
+            text-decoration: none;
+            padding: 20px;
+            color: #40868c;
+            font-size: 1.2rem;
+        }
+
+         .menu a:hover{
+            background-color: gray;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 600px){
+            .menu{
+                flex-direction: column;
+                padding: 10px;
+
+            }
+
+            .menu a{
+                background-color: #40868c;
+                color: #fff;
+                margin: 10px 0;
+                border-radius: 2px;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <a href="#">Contact me</a>
+        <a href="#">About me</a>
+    </div>
+</body>
+</html>
